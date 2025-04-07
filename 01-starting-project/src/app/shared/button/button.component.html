@@ -1,4 +1,8 @@
 <!-- button was moved to the button ts file. -->
-
-<span> Logout </span>
-<span class="icon"> → </span>
+<span>
+  <ng-content />
+</span>
+<!-- outputs icons related to any buttons -->
+<span class="icon">
+  <ng-content select="icon" />
+</span>
