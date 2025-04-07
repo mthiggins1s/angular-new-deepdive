@@ -1,0 +1,11 @@
+<div class="dashboard-item">
+  <article>
+    <header>
+      <!-- we will add @Inputs for the img and for the h2 tag -->
+      <img [src]="image.src" [alt]="image.alt" />
+      <h2>{{ title }}</h2>
+    </header>
+    <!-- a non-standard html element, which you place in your templates to tell Angular that it should render any wrapped content in that place. -->
+    <ng-content />
+  </article>
+</div>
