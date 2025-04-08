@@ -1,0 +1,5 @@
+<p>
+  <label>{{ label() }}</label>
+  <!-- ng-content allows us to insert any kind of markup here into this component from inside the place where we are using this component. -->
+  <ng-content select="input, textarea" />
+</p>
